@@ -9,7 +9,7 @@ The Unreal Engine Array Utils plugin simplifies array manipulation in Unreal Eng
 
 ![Overview](utilsimg.png)
 
-For more details, refer to the [full documentation](docs.pdf) included in the project, or read the [source](Plugins\Numeric\Source\Numeric\Private\NumericBPLibrary.cpp).
+For more details, refer to the [full documentation](docs.pdf) included in the project, or read the [source](https://github.com/pyoneerC/Array-Utils/blob/3def01ec2f30d5c8e21bc6fcf185cea53f8c09e7/Plugins/Numeric/Source/Numeric/Private/NumericBPLibrary.cpp).
 
 ## Getting Started
 
