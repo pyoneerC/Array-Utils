@@ -9,7 +9,7 @@ The Unreal Engine Array Utils plugin simplifies array manipulation in Unreal Eng
 
 ![Overview](utilsimg.png)
 
-For more details, refer to the [full documentation](LUGIN\docs.pdf) included in the project.
+For more details, refer to the [full documentation](docs.pdf) included in the project.
 
 ## Getting Started
 
