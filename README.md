@@ -36,7 +36,7 @@ Explore a variety of functions provided by the plugin by searching "Array Utils"
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under The Unlicense - see the [LICENSE](LICENSE.md) file for details.
 
 ## Contributing
 
