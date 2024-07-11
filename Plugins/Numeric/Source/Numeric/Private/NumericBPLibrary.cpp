@@ -11,8 +11,11 @@ DEFINE_LOG_CATEGORY(LogArrayUtils)
 
 UNumericBPLibrary::UNumericBPLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 
+// See function docs in header file.
+
 int32 UNumericBPLibrary::ArrayMax(const TArray<int32>& A)
 {
+	// Returns the maximum element in the array A.
 	return A.Num() > 0 ? *std::max_element(A.GetData(), A.GetData() + A.Num()) : -1;
 }
 
@@ -32,18 +35,23 @@ TArray<int32> UNumericBPLibrary::PartialSumN(const TArray<int32>& A, int32 N)
 {
 	N = FMath::Clamp(N, 0, A.Num());
 	TArray<int32> Result = A;
+
+	// Calculate the partial sum of the first N elements of the array.
 	std::partial_sum(Result.GetData(), Result.GetData() + N, Result.GetData());
 	return Result;
 }
 
 bool UNumericBPLibrary::IsPermutation(const TArray<int32>& A, const TArray<int32>& B)
 {
+	// Returns true if A is a permutation of B.
 	return A.Num() == B.Num() && std::is_permutation(A.GetData(), A.GetData() + A.Num(), B.GetData());
 }
 
 TArray<int32> UNumericBPLibrary::EveryoneCubed(const TArray<int32>& A)
 {
     TArray<int32> Result = A;
+
+	// Cube each element in the array.
     std::transform(A.GetData(), A.GetData() + A.Num(), Result.GetData(), [](int32 n) {return n * n * n; });
     return Result;
 }
@@ -51,6 +59,8 @@ TArray<int32> UNumericBPLibrary::EveryoneCubed(const TArray<int32>& A)
 TArray<int32> UNumericBPLibrary::EveryoneSquared(const TArray<int32>& A)
 {
     TArray<int32> Result = A;
+
+	// Square each element in the array.
     std::transform(A.GetData(), A.GetData() + A.Num(), Result.GetData(), [](int32 n) {return n * n; });
     return Result;
 }
@@ -226,6 +236,7 @@ TArray<int32> UNumericBPLibrary::ClampN(const TArray<int32>& A, int32 Min, int32
 
 	N = FMath::Min(N, B.Num());
 
+	// Clamp the first N elements of the array.
 	std::for_each(B.GetData(), B.GetData() + N, [Min, Max](int32& Element)
 	{
 		Element = FMath::Clamp(Element, Min, Max);
@@ -288,6 +299,7 @@ TArray<int32> UNumericBPLibrary::Rotate(const TArray<int32>& A, int32 Amount)
 
 	if (B.Num() > 0)
 	{
+		// Rotate the array by Amount positions. If Amount is negative, the rotation is performed in the opposite direction.
 		Amount = Amount % B.Num();
 		Amount = (Amount < 0) ? B.Num() + Amount : Amount;
 
