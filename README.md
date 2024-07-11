@@ -38,6 +38,7 @@ Explore a variety of functions provided by the plugin by searching "Array Utils"
 
 This project is licensed under The Unlicense - see the [LICENSE](LICENSE.md) file for details.
 
-Note: The plugin is provided as source code; ensure you have the necessary build environment set up before attempting to build the plugin.
+> [!WARNING]  
+> The plugin is provided as source code; ensure you have the necessary build environment set up before attempting to build the plugin.
 
 Happy coding! :)
