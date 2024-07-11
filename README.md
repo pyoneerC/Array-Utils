@@ -40,4 +40,4 @@ This project is licensed under The Unlicense - see the [LICENSE](LICENSE.md) fil
 
 Note: The plugin is provided as source code; ensure you have the necessary build environment set up before attempting to build the plugin.
 
-Happy coding!
+Happy coding! :)
