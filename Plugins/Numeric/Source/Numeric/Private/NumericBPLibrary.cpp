@@ -1,9 +1,9 @@
 // Maximo Comperatore. All Rights Reserved.
 
+#include "NumericBPLibrary.h"
 #include <algorithm>
 #include <numeric>
 #include <random>
-#include "NumericBPLibrary.h"
 #include "Numeric.h"
 #include "Logging/StructuredLog.h"
 
@@ -455,10 +455,4 @@ TArray<int32> UNumericBPLibrary::ArrayTake(const TArray<int32>& A, int32 N)
 {
 	N = FMath::Clamp(N, 0, A.Num());
 	return TArray<int32>(A.GetData(), N);
-}
-
-TArray<int32> UNumericBPLibrary::ArrayDrop(const TArray<int32>& A, int32 N)
-{
-	N = FMath::Clamp(N, 0, A.Num());
-	return TArray<int32>(A.GetData() + N, A.Num() - N);
 }

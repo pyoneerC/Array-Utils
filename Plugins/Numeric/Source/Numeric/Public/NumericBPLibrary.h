@@ -490,14 +490,4 @@ class UNumericBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Blueprintable, meta = (CompactNodeTitle = "TAKE", Category = "Array Utils", ToolTip = "Take N items from the beginning of the input array and copy them to a new array. If N is larger than size of the input array, all items from the input array are selected."))
 	static TArray<int32> ArrayTake(const TArray<int32>& A, int32 N);
 
-	/**
-	 * Drops the first N elements of the array and copies the rest to a new array. If N is larger than size of the input array, an empty array is returned.
-	 *
-	 * @param TargetArray Array.
-	 * @param Size Number of elements to drop.
-	 * @return The array without the first N elements.
-	 */
-	UFUNCTION(BlueprintCallable, CustomThunk, meta = (CompactNodeTitle = "DROP", Category = "Array Utils", ToolTip = "Drop N items from the beginning of the input array and copy the rest to a new array. If N is larger than size of the input array, an empty array is returned.", ArrayParm = "TargetArray", Keywords = "drop delete drray"))
-	static TArray<int32> ArrayDrop(const TArray<int32>& TargetArray, int32 Size);
-
 };
