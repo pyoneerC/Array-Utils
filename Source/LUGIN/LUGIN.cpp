@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Maximo Comperatore. All Rights Reserved.
 
 #include "LUGIN.h"
 #include "Modules/ModuleManager.h"

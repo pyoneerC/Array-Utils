@@ -1,4 +1,4 @@
-// Some copyright should be here...
+// Maximo Comperatore. All Rights Reserved.
 
 using UnrealBuildTool;
 
