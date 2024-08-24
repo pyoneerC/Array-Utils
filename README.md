@@ -7,7 +7,7 @@
 
 The Unreal Engine Array Utils plugin simplifies array manipulation in Unreal Engine 5 with a rich set of utility functions based on STL algorithms. This plugin is designed to be easy to integrate and provides a wide range of functionalities, including:
 
-![Overview](arrayutilsimg.avif)
+![Overview](imgs/arrayutilsimg.avif)
 
 For more details, refer to the [full documentation](docs.pdf) included in the project, or read the [source](https://github.com/pyoneerC/Array-Utils/blob/main/Plugins/Numeric/Source/Numeric/Private/NumericBPLibrary.cpp).
 
