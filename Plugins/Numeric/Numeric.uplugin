@@ -2,18 +2,24 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
+	"EngineVersion": "5.4.0",
 	"FriendlyName": "Array Algorithms",
 	"Description": "Various STL algorithms for arrays in Blueprints",
 	"Category": "Other",
 	"CreatedBy": "Max",
 	"CreatedByURL": "",
 	"DocsURL": "",
-	"MarketplaceURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/7541ff25ad7d4e338e20d08e1d6753d7",
 	"SupportURL": "",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"PlatformAllowList": [
+		"Win64",
+		"Win32"
+	],
+	"PlatformDenyList": [],
 	"Modules": [
 		{
 			"Name": "Numeric",

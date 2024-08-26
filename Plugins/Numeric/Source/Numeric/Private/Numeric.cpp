@@ -1,4 +1,4 @@
-// Maximo Comperatore. All Rights Reserved.
+// © 2024 Maximo Comperatore. All Rights Reserved.
 
 #include "Numeric.h"
 

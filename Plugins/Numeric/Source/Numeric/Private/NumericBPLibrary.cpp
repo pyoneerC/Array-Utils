@@ -1,4 +1,4 @@
-// Maximo Comperatore. All Rights Reserved.
+// © 2024 Maximo Comperatore. All Rights Reserved.
 
 #include "NumericBPLibrary.h"
 #include <algorithm>
@@ -208,7 +208,7 @@ int32 UNumericBPLibrary::Search(const TArray<int32>& A, const TArray<int32>& B, 
 
 bool UNumericBPLibrary::IsSorted(const TArray<int32>& A)
 {
-	return A.Num() <= 1 || Algo::IsSorted(A);
+	return std::is_sorted(A.GetData(), A.GetData() + A.Num());
 }
 
 int32 UNumericBPLibrary::InnerProduct(const TArray<int32>& A, const TArray<int32>& B, int32 StartIndex)
